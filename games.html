@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Well Do You Know Your Friend?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>How Well Do You Know Your Friend?</h2>
+        <form id="quiz">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. What’s their favorite color?</p>
+                <label><input type="radio" name="q1" value="Blue"> Blue</label>
+                <label><input type="radio" name="q1" value="Green"> Green</label>
+                <label><input type="radio" name="q1" value="Red"> Red</label>
+                <label><input type="radio" name="q1" value="Yellow"> Yellow</label>
+            </div>
+            
+            <!-- Question 2 -->
+            <div class="question">
+                <p>2. What’s their favorite food?</p>
+                <label><input type="radio" name="q2" value="Pizza"> Pizza</label>
+                <label><input type="radio" name="q2" value="Burgers"> Burgers</label>
+                <label><input type="radio" name="q2" value="Sushi"> Sushi</label>
+                <label><input type="radio" name="q2" value="Pasta"> Pasta</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p>3. Do they prefer coffee or tea?</p>
+                <label><input type="radio" name="q3" value="Coffee"> Coffee</label>
+                <label><input type="radio" name="q3" value="Tea"> Tea</label>
+            </div>
+
+            <div class="question">
+                <p>4. Do they prefer Day Reading or Night Reading?</p>
+                <label><input type="radio" name="q4" value="Day Reading"> Day Reading</label>
+                <label><input type="radio" name="q4" value="Night Reading"> Night Reading</label>
+            </div>
+
+            <div class="question">
+                <p>5. Do they prefer reading, watching movies, playing games, or coding?</p>
+                <label><input type="radio" name="q5" value="Reading"> Reading</label>
+                <label><input type="radio" name="q5" value="Watching"> Watching</label>
+                <label><input type="radio" name="q5" value="Coding"> Coding</label>
+                <label><input type="radio" name="q5" value="Playing Games"> Playing Games</label>
+            </div>
+
+            <button type="button" onclick="submitQuiz(event)">Submit</button>
+
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="games.js"></script>
+</body>
+</html>
